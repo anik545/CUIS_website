@@ -18,7 +18,7 @@
             
     
 <div class="tile2"><h1 class="accent"><span><div style="text-align: center">About</div></span></h1>
-<p>The Cambridge University&rsquo;s India Society was founded by India&rsquo;s First Prime Minister, the great Jawaharlal Nehru, during his time at Trinity College. It was set up to facilitate greater understanding of Indian culture within Cambridge. Being the third largest student run society in Cambridge, it serves as a dynamic social platform for both Indian and non-Indian students alike. We hope to raise awareness of cultural and political issues relating to India with our numerous events.</p>
+<p>The Cambridge University India Society was founded by India&rsquo;s First Prime Minister, the great Jawaharlal Nehru, during his time at Trinity College. It was set up to facilitate greater understanding of Indian culture within Cambridge. Being the third largest student run society in Cambridge, it serves as a dynamic social platform for both Indian and non-Indian students alike. We hope to raise awareness of cultural and political issues relating to India with our numerous events.</p>
 <p>These include academics talks, classes, film nights, club nights, formals, sports events, our annual garden party and of course our legendary Annual Ball. Membership is open to anyone, and not just those looking for a prospective spouse! If you are thinking of becoming a member, we promise a good time and look forward to hearing from you!</p>
 <ul>
   <li><a href="/constitution.pdf">Constitution (PDF)</a></li>
