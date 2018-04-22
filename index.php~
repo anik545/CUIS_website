@@ -1,0 +1,42 @@
+<?php
+    include("Includes/header.php");
+    include ("Includes/sponsorsidebar.php");
+    ?>
+<link href="Styles/Metro.css" rel="stylesheet" type="text/css" />
+<link href="Styles/FrontPage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="Includes/windowfiles/dhtmlwindow.css" type="text/css" />
+
+<div id="fb-root"></div> 
+<script>(function(d, s, id) { 
+  var js, fjs = d.getElementsByTagName(s)[0]; 
+  if (d.getElementById(id)) return; 
+  js = d.createElement(s); js.id = id; 
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=266095990089361";
+  fjs.parentNode.insertBefore(js, fjs); 
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+        
+<div id="presWelcome" class="tile2">
+      <h1 class="accent"><span><div style="text-align: center">Welcome!</div></span></h1>
+    <p>Welcome to the Cambridge University India Society website.</p>
+    <p>Here you'll find all the information you need about our upcoming events, including speakers and club nights, as well as details about membership, the society and the committee.</p>
+    <p>CU India Society is open to all students, regardless of race or religion; all you need is an interest in all things Indian! From Hindi language classes, to fascinating guest speakers, we have something for everyone.</p>
+    <hr>
+
+<h2 class="light"><span class="accent"><a href="/events.php">Upcoming Events</a></span></h2>
+<h3>CU IndiaSoc Chaat Night - FREE FOR MEMBERS - Saturday 7th March 2015 18:30pm - 21:30pm </h3> <i>Cambridge University Graduate Union, Mill Street</i>
+  <blockquote>
+    <p><span itemprop="description">The CU India Soc Committee 2014-15 would like to invite you to join them in their last social event of their year. Come and enjoy tasty Indian food and cooling refreshments whilst mingling with other guests. The menu for the night will be Idli, Sambhar and Chutneys, Cholle Tikki Chaat and Dahi Vada. FREE FOR MEMBERS, £5 FOR NON-MEMBERS. We really advise you to arrive by 6.45pm as we anticipate this will be a popular event! Food will run out quickly! </span><a href="https://www.facebook.com/events/656020384523643/">more...</a><br>
+</blockquote></p><br>
+
+<h3>CU IndiaSoc AGM 2015 - Monday 9th March 2015 19:00pm - 21:00pm </h3> <i>Queen's Building Lecture Theatre, Emmanuel College</i>
+  <blockquote>
+    <p><span itemprop="description">It is that time of year again, an incredible IndiaSoc year has flown buy and it’s time for our Annual General Meeting (AGM). The IndiaSoc Committee have thoroughly enjoyed this past year and hope you will join us at our very last event as the 2014-2015 committee. The evening will be split into 2 parts: First, a review and discussion of our year – your opportunity to give us feedback on what we’ve done well and not so well in order to make the society better. Second, Hustings for the new IndiaSoc Committee 2015-16! This is your chance to get involved with IndiaSoc and apply for a position on the Committee for one of the biggest and best societies in Cambridge! </span><a href="https://www.facebook.com/events/393927890778682/">more...</a><br>
+</blockquote></p><br>
+    
+    <span class="accent"><i><a href="/events.php#E1">See our Past Events...</a></i></span>         
+</div></body>
+<?php
+ 	include ("Includes/followsidebar.php");  
+   include ("Includes/footer.php");
+   ?>

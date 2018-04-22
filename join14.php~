@@ -1,0 +1,36 @@
+<?php
+    include("Includes/header.php");         
+?>
+<p>Become a member of CU India Society today! As a member, you will  receive discounts  and priority tickets to many of our events including  the annual ball, garden party, club nights and more. </p><br>
+<p> To become a member:</p>
+<p>1. Bank transfer to: CU India Society. Account Number: 90082724. Sort Code: 20-17-19</p>
+<p>2. Give cash/cheque to a committee member</p>
+<p>3. UMS a cheque to <a href="mailto:ak868@cam.ac.uk">Ajay Kotecha (ak868)</a>, Churchill College,  with your name, email and college on the back.<br>
+  </p>
+<p class="accent"><strong>Payable to: "Cambridge Univeristy India Society" <br>
+  Amount: </strong><strong>&#163;15 for life membership or &#163;10 for one year</strong></p><br>
+<p>For more information, please contact <a	 href="mailto:ak868@cam.ac.uk">Ajay Kotecha</a>.</p>
+<p>Also make sure you join our mailing list and add us on Facebook to keep track of what we're doing. </p>
+<p><br>
+</p>
+<table width="500" border="0">
+  <tr>
+    <td width="245"><form action="https://lists.cam.ac.uk/mailman/subscribe/soc-indiasoc" method="post">
+      <p align="center">&nbsp;</p>
+      <p align="center">Undergraduate List:        </p>
+      <p align="center">
+        <input name="email" size="16" value="Email address" type="text">
+        <input value="Join" type="submit">
+      </p>
+      <p align="center">&nbsp;</p>
+    </form></td>
+    <td width="245"><a href="http://www.facebook.com/group.php?gid=2203091656" target="new"><img src="Images/Common/facebook-icon.png" alt="" height="100" align="middle" id="noborder"></a></td>
+  </tr>
+</table>
+<p> </p>
+<center>
+</center>
+<h3>&nbsp;</h3>
+<?php 
+    include ("Includes/footer.php");
+?>

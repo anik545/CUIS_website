@@ -1,0 +1,27 @@
+/* FADING SLIDESHOW */
+div#page-content div#slideshow {
+    height: 426px;
+}
+
+/* CUSTOMISED METRO TILES */
+div#page-content #eventsShortcut {
+    background-image: url("../Images/Common/Calendar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div#page-content #eventsShortcut:hover {
+    background-image: url("../Images/Common/Calendar_Hover.png");
+}
+div#dateTile {
+    line-height: 24px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    min-height: 0 !important;
+    padding: 5px;
+}
+
+/* ALIGNMENTS */
+.welcomepic {
+    padding-left: 10px;
+}

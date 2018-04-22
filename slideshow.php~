@@ -1,0 +1,18 @@
+<script type="text/javascript" src="http://www.linkbuildingservices4sites.com/resources/slide-show.js"></script>   
+
+<script type="text/javascript">  
+var mygallery=new fadeSlideShow({   
+ wrapperid: "imageslideshow1", //ID of blank DIV on page to house Slideshow   
+ dimensions: [500, 400], //width/height of gallery in pixels. Should reflect dimensions of largest image
+   imagearray:  [     
+   ["1.jpg"],    
+   ["2.jpg"], 
+ 
+   ],
+  displaymode: {type:'auto', pause:2000, cycles:0, wraparound:false},   
+  persist: false, //remember last viewed slide and recall within same session?   
+  fadeduration: 1000, //transition duration (milliseconds)  
+  descreveal: "ondemand",
+  togglerid: ""
+  })
+ </script>

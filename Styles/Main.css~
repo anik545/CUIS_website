@@ -1,0 +1,281 @@
+/* QUICK STYLES */
+.left {
+    float: left !important;
+}
+.right {
+    float: right !important;
+}
+.block {
+    display: inline-block;
+}
+.tight {
+    margin: 0 !important;
+    min-height: 0 !important;
+}
+.light {
+	font-weight: lighter !important;
+	color: #000;
+}
+
+/* OVERRIDES */
+h1, h2, h3, h4 {
+    margin-top: 0;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: #FF9535;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* PARAGRAPHS/CONTENT */
+h3 {
+    color: #000000;
+}
+p {
+	font-size: 0.95em;
+	text-align: justify;
+	color: #000000;
+}
+span.emph{
+    color: #000000;
+    font-weight: bold;
+}
+
+/* COLOUR SCHEME */
+.accent {
+    color: #FF9535 !important;
+}
+.accentHover:hover {
+    color: #FF9535 !important;
+}
+.accentBackground {
+    --->background-color: #FF9535 !important;
+    color: white;
+    background-color:rgb(53,140,244); when we change colour scheme
+    
+}
+.accentBackgroundHover {
+    background-color: #dedede !important;
+    color: black;
+}
+.accentBackgroundHover:hover {
+    background-color: #FF9535 !important;
+    color: white;
+}
+.accentTextHighlight span {
+    color: #FF9535 !important;
+}
+
+/* PRIMARY LAYOUT */
+body {
+    font-family: "Segoe WPC", "Segoe UI", Helvetica, Arial, "Arial Unicode MS", Sans-Serif;
+    padding: 0;
+    margin: 0;
+}
+
+div#page {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 956px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justified;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: white;
+}
+
+/* FANCY PAGE */
+#page {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+#page:before, #page:after  
+{  
+    position: absolute;  
+    width: 40%;  
+    height: 10px;  
+    content: ' ';  
+    left: 12px;  
+    bottom: 12px;  
+    background: transparent;  
+    -webkit-transform: skew(-5deg) rotate(-5deg);  
+    -moz-transform: skew(-5deg) rotate(-5deg);  
+    -ms-transform: skew(-5deg) rotate(-5deg);  
+    -o-transform: skew(-5deg) rotate(-5deg);  
+    transform: skew(-5deg) rotate(-5deg);  
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  
+    z-index: -1;  
+}
+#page:after  
+{  
+    left: auto;  
+    right: 12px;  
+    -webkit-transform: skew(5deg) rotate(5deg);  
+    -moz-transform: skew(5deg) rotate(5deg);  
+    -ms-transform: skew(5deg) rotate(5deg);  
+    -o-transform: skew(5deg) rotate(5deg);  
+    transform: skew(5deg) rotate(5deg);  
+}
+/* END FANCY PAGE */
+
+div#header, div#footer {
+    width: 956px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+    div#header a#camLogo {
+        height: 28px;
+        float: right;
+    }
+    div#header div#menubar {
+        border-bottom: 1px solid #dedede;
+        overflow: hidden;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        clear: both;
+        margin-top: 10px;
+        font-weight: lighter;
+    }
+        div#header div#menubar ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            list-style-image: none;
+            float: left;
+        }
+            div#header div#menubar ul > li {
+                margin-right: 15px;
+                display: inline;
+            }
+                div#header div#menubar ul > li > a {
+                    color: #333;
+                    line-height: 24px;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+                div#header div#menubar ul > li > a:hover {
+                    color: #FF9535 !important;
+                }
+
+        div#header div#menubar div#search {
+            float: right;
+            background-color: #eee;
+        }
+            div#header div#menubar div#search > * {
+                float: right;
+            }
+            div#header div#menubar div#search > input[type="text"] {
+                background-color: #eee;
+                border: 2px solid #eee;
+                padding: 5px;
+                width: 200px;
+                margin: 0;
+                color: #444;
+            }
+            div#header div#menubar div#search > input[type="submit"] {
+                background-color: #eee;
+                background-image: url("../Images/Common/SearchSmall.png");
+                background-position: center;
+                border: none;
+                padding: 0;
+                width: 30px;
+                margin: 0;
+                height: 30px;
+            }
+            div#header div#menubar div#search > input[type="text"]:focus {
+                border: 2px solid #FF9535;
+            }
+div#page-content {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: 300px;
+}
+div#footer {
+    border-top: 1px solid #dedede;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    color: #9d9d9d;
+    font-size: 11px;
+}
+    div#footer span#copyright, div#footer span#account a {
+        text-transform: uppercase;
+        color: #9d9d9d;
+    }
+    div#footer span#account a:hover {
+        text-decoration: underline;
+        color: #FF9535;
+    }
+
+/* ADMIN BAR */
+div#page.with-admin-bar { margin-top: 35px; }
+
+div#adminBar {
+    background-image: url("../Images/Common/AdminBar.png");
+    border-bottom: 1px solid #069c00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 28px;
+}
+    div#adminBar span {
+    font-size: 14px;
+    font-variant: small-caps;
+    float: left;
+    padding-left: 10px;
+    padding-top: 4px;
+    font-weight: bold;
+    color: #136300;
+    }
+    div#adminBar ul {
+        list-style-type: none;
+        list-style-image: none;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        float: right;
+    }
+        div#adminBar ul > li {
+            display: inline-block;
+            font-size: 14px;
+        }
+        div#adminBar ul > li.label {
+            font-variant: small-caps;
+            padding-right: 10px;
+        }
+        div#adminBar ul > li.username {
+            font-weight: bold;
+        }
+            div#adminBar ul > li > a {
+                color: white;
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            div#adminBar ul > li > a:hover {
+                background-color: white;
+                text-decoration: none;
+                color: #FF9535;
+            }
+#presWelcome p {
+	color: #000000;
+}
+

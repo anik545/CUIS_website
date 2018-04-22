@@ -1,0 +1,13 @@
+<?php
+    include("Includes/header.php");         
+?>
+ <h2 class="accent"><div style="text-align: center">Annual Ball 2014: Aasha - Saturday 1st March 2014 6pm</div></h2>
+  <blockquote>
+    <p><span itemprop="description">Join us for an experience like no other, and immerse yourself in the rich and unparalleled culture of India. Be welecomed like a Maharaja at our majestic drinks reception, before joining us for the finest culinary selection this side of Delhi, and a grandiose display of entertainment and raw Indian talent. Dance the night away to an explosion of vibrant rhythms of Bollywood, Bhangra and Urban music. For more information, including photos of the night, </span><a href="http://www.facebook.com/events/267869326709422/"> lick here.<br>
+    </a>  </p>
+  </blockquote>
+
+<?php
+    
+    include ("Includes/footer.php");
+?>

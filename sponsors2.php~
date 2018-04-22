@@ -1,0 +1,40 @@
+<?php
+    include("Includes/header.php");
+    include ("Includes/sponsorsidebar.php");
+    ?>
+<link href="Styles/Metro.css" rel="stylesheet" type="text/css" />
+<link href="Styles/FrontPage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="Includes/windowfiles/dhtmlwindow.css" type="text/css" />
+
+<div id="fb-root"></div> 
+<script>(function(d, s, id) { 
+  var js, fjs = d.getElementsByTagName(s)[0]; 
+  if (d.getElementById(id)) return; 
+  js = d.createElement(s); js.id = id; 
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=266095990089361";
+  fjs.parentNode.insertBefore(js, fjs); 
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+            
+    
+<div class="tile2">
+   <p>Become a member of CU India Society today! As a member, you will receive discounts and priority tickets to many of our events including the Annual Ball, garden party, club nights and more. </p><br>
+<p> Ways to become a member:</p>
+<p>1. Bank transfer to CU India Society (Account Number: 90082724, Sort Code: 20-17-19)</p>
+<p>2. Give cash/cheque to any committee member</p>
+<p>3. UMS a cheque to <a href="mailto:ak868@cam.ac.uk">Ajay Kotecha (ak868)</a>, Churchill College, with your name, email and college on the back.
+  </p>
+<p class="accent"><strong>Payable to: "Cambridge University India Society" <br>
+  Amount: </strong><strong>&#163;15 for life membership or &#163;10 for one year</strong></p><br>
+<p>For more information, please contact <a href="mailto:ak868@cam.ac.uk">Ajay Kotecha</a>.</p>
+<a id="Join"></a><p>Also make sure you join our mailing list and follow us on <a href="https://www.facebook.com/indiasoc">Facebook</a> and <a href="https://twitter.com/CUIndiaSoc">Twitter</a> to keep track of what we're doing. </p>
+<form action="https://lists.cam.ac.uk/mailman/subscribe/soc-indiasoc" method="post">
+          <input name="email" size="16" placeholder="Email address" type="text">
+        <input value="Join" type="submit">
+      </form></p>
+<h3>&nbsp;</h3>
+</div></body>
+<?php
+ 	include ("Includes/followsidebar.php");  
+   include ("Includes/footer.php");
+   ?>

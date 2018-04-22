@@ -1,0 +1,133 @@
+<?php
+// $Id: fancyzoom.module,v 1.1.4.8 2010/07/19 04:32:15 slurslee Exp $
+/**
+ * @file
+ * Add automatic fancyzoom support to the site
+ */
+
+function _fancyzoom_version() {
+  return '1.5';
+}
+
+/**
+ * Implementation of hook_help().
+ */
+function fancyzoom_help($path, $arg) {
+  switch ($path) {
+    case 'admin/settings/fancyzoom':
+      return '<p style="font-size:x-small"><b>FancyZoom '. _fancyzoom_version() .'</b><br />(c) 2009 <a href="http://www.cabel.name/">Cabel Sasser</a> / Panic Inc &bull; Drupal Module by <a href="http://www.thinkyhead.com/">Scott Lahteine</a> / Thinkyhead<br /><span style="color:red">&gt;&gt;For commercial sites please visit <a href="http://www.fancyzoom.com" style="color:red;text-decoration:underline">www.fancyzoom.com</a> to purchase a license.&lt;&lt;</span></p>';
+  }
+}
+
+/**
+ * Implementation of hook_perm().
+ *
+ * - Add a permission to administer fancyzoom
+ */
+function fancyzoom_perm() {
+  return array('administer fancyzoom');
+}
+
+/**
+ * Implementation of hook_cron().
+ *
+ * - Check if module moved and reset the image path
+ */
+function fancyzoom_cron() {
+  // If the images path is in-module and the module moves, reset the images path
+  $img_home = variable_get('fancyzoom_zoomImagesURI', '0');
+  $old_loc = stristr($img_home, 'modules/fancyzoom/images/zoom');
+  if ($old_loc || (variable_get('fancyzoom_home', '0') != drupal_get_path('module','fancyzoom'))) {
+    if (!preg_match('#^https?://#', $img_home) && ($old_loc || stristr($img_home, 'modules/fancyzoom/fancyzoom/images/zoom'))) {
+      variable_del('fancyzoom_zoomImagesURI');
+      drupal_set_message('The FancyZoom image path was reset.');
+    }
+    _fancyzoom_save_settings();
+  }
+}
+
+/**
+ * Implementation of hook_init().
+ *
+ * - Do things which must happen once per page:
+ *    - Update the javascript settings file if the version changed
+ *    - Include FancyZoom javascripts in the page header
+ */
+function fancyzoom_init() {
+
+  if (_fancyzoom_test_install()) {
+
+    $ver = _fancyzoom_version();
+    if (variable_get('fancyzoom_version', '0') != $ver) {
+      variable_set('fancyzoom_version', $ver);
+      _fancyzoom_save_settings();
+    }
+
+    drupal_add_js(variable_get('fancyzoom_settings_js', '0'));
+
+    $js = drupal_get_path('module','fancyzoom').'/fancyzoom/js/';
+    switch(variable_get('fancyzoom_scriptType', 'jquery-min')) {
+      case 'jquery-min':
+        drupal_add_js($js.'jquery/FancyZoom.min.js');
+        drupal_add_js($js.'jquery/FancyZoomHTML.min.js');
+        break;
+      case 'jquery':
+        drupal_add_js($js.'jquery/FancyZoom.js');
+        drupal_add_js($js.'jquery/FancyZoomHTML.js');
+        break;
+      case 'standard-min':
+        drupal_add_js($js.'standard/FancyZoom.min.js');
+        drupal_add_js($js.'standard/FancyZoomHTML.min.js');
+        break;
+      case 'standard':
+        drupal_add_js($js.'standard/FancyZoom.js');
+        drupal_add_js($js.'standard/FancyZoomHTML.js');
+        break;
+    }
+  }
+  else if (user_access('administer fancyzoom')) {
+    drupal_set_message('<em>FancyZoom is not fully installed yet!<br/>Download and install the <a target="_blank" href="http://www.thinkyhead.com/design/fancyzoom">FancyZoom Javascript</a> to complete the installation!</em>', 'warning');
+  }
+}
+
+/**
+ * Implementation of hook_menu().
+ *
+ * - Add menu items for the fancyzoom admin page
+ *
+ */
+function fancyzoom_menu() {
+  $items['admin/settings/fancyzoom'] = array(
+    'title' => 'FancyZoom',
+    'description' => 'Configure zooming images throughout the site.',
+    'file' => 'fancyzoom_admin.inc',
+    'page callback' => 'fancyzoom_settings',
+    'access arguments' => array('administer fancyzoom')
+    );
+  return $items;
+}
+
+function _fancyzoom_save_settings() {
+  if (_fancyzoom_test_install()) {
+    variable_set('fancyzoom_home', drupal_get_path('module','fancyzoom'));
+
+    ob_start();
+    include(drupal_get_path('module', 'fancyzoom') .'/fancyzoom/js/FancyZoomSettings.php.js');
+    $data = ob_get_clean();
+
+    $dest = file_directory_path() .'/FancyZoomSettings-'. drupal_substr(md5(time()), 22) .'.js';
+    if ($oldfile = variable_get('fancyzoom_settings_js', '0')) {
+      file_delete($oldfile);
+    }
+    variable_set('fancyzoom_settings_js', $dest);
+    file_save_data($data, $dest, FILE_EXISTS_REPLACE);
+
+  } else {
+    drupal_set_message(t('FancyZoom settings could not be applied because the FancyZoom javascript is not yet installed.'), 'error');
+  }
+}
+
+function _fancyzoom_test_install() {
+  $jspath = drupal_get_path('module', 'fancyzoom') .'/fancyzoom/js/FancyZoomSettings.php.js';
+  return file_exists($jspath);
+}

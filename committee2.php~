@@ -1,0 +1,199 @@
+<?php
+    include("Includes/header.php");
+    include ("Includes/sponsorsidebar.php");
+    ?>
+<link href="Styles/Metro.css" rel="stylesheet" type="text/css" />
+<link href="Styles/FrontPage.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="Includes/windowfiles/dhtmlwindow.css" type="text/css" />
+
+<div id="fb-root"></div> 
+<script>(function(d, s, id) { 
+  var js, fjs = d.getElementsByTagName(s)[0]; 
+  if (d.getElementById(id)) return; 
+  js = d.createElement(s); js.id = id; 
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=266095990089361";
+  fjs.parentNode.insertBefore(js, fjs); 
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+            
+    
+<div class="tile2"><h3>
+    The Cambridge University India Society Committee 2014-2015
+</h3>
+<p>
+    For information on past committees, please look at the <a href="#C2014">Past Committees</a> section.<br>
+    To contact a member, please click on their name. </p>
+<table width="432" border="0" align="center">
+  <tr align="center" valign="middle">
+    <td width="144"><a href="mailto:ss2174@cam.ac.uk"><img src="/Images/Committee/Sonam.jpg" width="144" height="170" alt="Sonam"></a></td>
+<td width="10">&nbsp;</td>    
+    <td width="144"><a href="mailto:asp39@cam.ac.uk"><img src="/Images/Committee/Arran.jpg" width="144" height="170" alt="Arran"></a></td>
+<td width="10">&nbsp;</td>     
+    <td width="144"><a href="mailto:an430@cam.ac.uk"><img src="/Images/Committee/Ash.jpg" width="144" height="170" alt="Ash"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td class="accent"><a href="mailto:ss2174@cam.ac.uk">Sonam Shah<br>
+      <span style="font-size: smaller;"><font color="#000000">President<br>
+      (Jesus)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:asp39@cam.ac.uk">Arran Patel<br>
+      <span style="font-size: smaller;"><font color="#000000">Vice President<br>
+      (Fitzwilliam)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:an430@cam.ac.uk">Ash Nandi<br>
+      <span style="font-size: smaller;"><font color="#000000">Secretary & Publicity<br>
+      (Sidney Sussex)</font></span></a><br></td>
+  </tr><br>
+  <tr align="center" valign="middle">
+  	 <td><br><br>
+    <a href="mailto:ak868@cam.ac.uk"><img src="/Images/Committee/Ajay.jpg" width="144" height="170" alt="Ajay"></a></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:kjr47@cam.ac.uk"><img src="/Images/Committee/Krishna.jpg" width="144" height="170" alt="Krishna"></a></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:ha344@cam.ac.uk"><img src="/Images/Committee/Harini.jpg" width="144" height="170" alt="Harini"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:ak868@cam.ac.uk">Ajay Kotecha<br>
+      <span style="font-size: smaller;"><font color="#000000">Treasurer<br>
+      (Churchill)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:kjr47@cam.ac.uk">Krishna Ramesh<br>
+    <span style="font-size: smaller;"><font color="#000000">Sponsorship<br>
+      (Downing)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:ha344@cam.ac.uk">Harini Annadanam<br>
+      <span style="font-size: smaller;"><font color="#000000">Ents<br>
+      (Sidney Sussex)</font></span></a><br></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><br><br>
+      <a href="mailto:ps638@cam.ac.uk"><img src="/Images/Committee/Poulomi.jpg" width="144" height="170" alt="Poulomi"></a></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:pa366@cam.ac.uk"><img src="/Images/Committee/Praveena.jpg" width="144" height="170" alt="Praveena"></a><br></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:ndd26@cam.ac.uk"><img src="/Images/Committee/Nikhil.jpg" width="144" height="170" alt="Nikhil"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:ps638@cam.ac.uk">Poulomi Solanki<br>
+    <span style="font-size: smaller;"><font color="#000000">Culture & Education<br>
+      (Newnham)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:pa366@cam.ac.uk">Praveena Anilal<br>
+    <span style="font-size: smaller;"><font color="#000000">Sports<br>
+      (Gonville & Caius)</font></span></a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:ndd26@cam.ac.uk">Nikhil Dhir<br>
+    <span style="font-size: smaller;"><font color="#000000">General<br>
+      (Queens')</font></span></a><br></td>
+      </tr>
+  <tr align="center" valign="middle">
+    <td><br><br>
+      <a href="mailto:dt360@cam.ac.uk"><img src="/Images/Committee/Dipshika.jpg" width="144" height="170" alt="Dipshika"></a></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:kdm25@cam.ac.uk"><img src="/Images/Committee/Kush.jpg" width="144" height="170" alt="Kush"></a></td>
+    <td>&nbsp;</td>
+    <td><br><br>
+      <a href="mailto:ag741@cam.ac.uk"><img src="/Images/Committee/Akash.jpg" width="144" height="170" alt="Akash"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:dt360@cam.ac.uk">Dipshika Thakur<br>
+    <span style="font-size: smaller;"><font color="#000000">Khayaal Editor<br>
+      (Peterhouse)</font></span></a><br></td>
+   <td>&nbsp;</td>
+    <td><a href="mailto:kdm25@cam.ac.uk">Kush Madlani<br>
+    <span style="font-size: smaller;"><font color="#000000">Advisor<br>
+      (Christ's)</font></span></a><br></td>
+   <td>&nbsp;</td>
+    <td><a href="mailto:ag741@cam.ac.uk">Akash Gandhi<br>
+    <span style="font-size: smaller;"><font color="#000000">Advisor<br>
+      (Queens')</font></span></a><br></td>
+   </tr>
+  <tr align="center" valign="middle">
+    <td><br><br>
+      </td>
+    <td>&nbsp;</td>
+   <td><br><br>
+      <a href="mailto:mj433@cam.ac.uk"><img src="/Images/Committee/Mehul.jpg" width="144" height="170" alt="Mehul"></a></td>
+    <td>&nbsp;</td>
+   <td><br><br>
+      </td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><br>
+      <br>
+      </a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:mj433@cam.ac.uk">Mehul Jesani<br>
+    <span style="font-size: smaller;"><font color="#000000">Webmaster<br>
+      (Emmanuel)</font></span></a><br></td>
+   <td>&nbsp;</td>
+    <td><br>
+      <br>
+      </a></td>
+  </tr>
+</table>
+<br>
+<p class="accentBackground"><strong><a id="C2014"></a>PAST COMMITTEES:</strong></p>
+<p class="Background"><strong>2013-2014:</strong></p>
+<p><strong class="accent">President:</strong> Kush Madlani (Christ's)<br>
+  <strong class="accent">Vice President:</strong> Sakshi Rathi (Emmanuel)<br>
+  <strong class="accent">Secretary:</strong> Vinci Naruka (Sidney Sussex)<br>
+  <strong class="accent">Treasurer:</strong> Jeevan Jayaprakash (Homerton)<br>
+  <strong class="accent">Publicity:</strong> Arsha Nagrani (St John's)<br>
+  <strong class="accent">Ents:</strong> Aarushi Bajaj (Fitzwilliam)<br>
+  <strong class="accent">Sponsorship:</strong> Sajeev Sridhar (Gonville and Caius), Akash Gandhi (Queens')<br>
+  <strong class="accent">Social and Alumni:</strong> Thomson Ambooken (Downing)<br>
+  <strong class="accent">Sports Officer:</strong> Milan Patel (Homerton)<br>
+  <strong class="accent">General Committee:</strong> Parth Patel (Christ's), Bhagya Raj (Sidney Sussex)<br>
+  <strong class="accent">Advisor:</strong> Shonit Shah (Robinson), Vikita Desai (St Catharine's)<br>
+  <strong class="accent">Webmaster:</strong> Sachin Gupta (Christ's)</p>
+<p>&nbsp;</p>
+<p class="Background"><a id="C2013"></a><strong>2012-2013:</strong></p>
+<p><strong class="accent">President: </strong>Rishi Seth (Homerton)<br>
+  <strong class="accent">Vice President: </strong>Shonit Shah (Robinson)<br>
+  <strong class="accent">Secretary: </strong>Shaneil Patel (Gonville and Caius)<br>
+  <strong class="accent">Treasurer: </strong>Vikita Desai (St Catharine's)<br>
+  <strong class="accent">Publicity: </strong>Krupa Dodia (Queens')<br>
+  <strong class="accent">Ents: </strong>Anoushka Amin (Queens')<br>
+  <strong class="accent">Sponsorship: </strong>Heeral Dave (St Johns'), Rishabh Bhargava (Girton)<br>
+    <strong class="accent">Culture and Learning: </strong>Arvind Kumar (Churchill)<br>
+  <strong class="accent">Sports Officer: </strong>Upen Patel (Selwyn)<br>
+  <strong class="accent">General Committee: </strong>Farah Ghouri (Girton), Rahul Patel Mall (St Johns')<br>
+  <strong class="accent">Advisor: </strong>Malti B. Vaghela (Queens'), Shalin Kamdar (Fitzwilliam)<br>
+  <strong class="accent">Webmaster: </strong>Chirag Shah (Girton)</p>
+<p>&nbsp;</p>
+<p class="Background"><a id="C2012"></a><strong>2011-2012:</strong></p>
+<p><strong class="accent">President: </strong>Malti B. Vaghela (Queens')<br>
+  <strong class="accent">Vice President: </strong>Neeru Ravi (Pembroke)<br>
+  <strong class="accent">Secretary: </strong>Maya Patel (Sidney Sussex)<br>
+  <strong class="accent">Treasurer: </strong>Shalin Kamdar (Fitzwilliam)<br>
+  <strong class="accent">Publicity:</strong> Prisila Ahmed (Newnham), Apoorva Jayaraman<br>
+  <strong class="accent">Ents: </strong>Viraj Patel (Churchill)<br>
+  <strong class="accent">Sponsorship: </strong>Krishma Sangani (Sidney Sussex), Rishi Dutta<br>
+  <strong class="accent">Sports Officer:</strong> Rohan Prakash (Downing)<br>
+  <strong class="accent">General Committee: </strong>Nitasha Dhiri (Girton), Rishi Seth (Homerton)<br>
+  <strong class="accent">Webmaster: </strong>Ayesha Sengupta (Corpus)</p>
+<p>&nbsp;</p>
+<p class="Background"><a id="C2011"></a><strong>2010-2011:</strong></p>
+<p><strong class="accent">President: </strong>Mukund Kanoria (Magdelene)<br>
+ <strong class="accent">Vice President: </strong>Urmil Mehta (Queens')<br>
+ <strong class="accent">Secretary: </strong>Nimisha Patel (Gonville and Caius)<br>
+ <strong class="accent">Treasurer: </strong>Shaan Raithatha (Selwyn)<br>
+ <strong class="accent">Ents:</strong> Malti B. Vaghela (Queens')<br>
+ <strong class="accent">Sponsorship: </strong>Aseem Ghagda (Queens')<br>
+ <strong class="accent">Sponsorship:</strong> Snigdha Reddy (Clare)<br>
+ <strong class="accent">Publicity:</strong> Archie Shrinivasan (Murray Edwards), Zabeen Ahmed (Clare)<br>
+ <strong class="accent">Sports Officer:</strong> Sundip Jadeja (Robinson)<br>
+ <strong class="accent">General Committee: </strong>Srikirti Kodali (Pembroke)<br>
+ <strong class="accent">Webmaster: </strong>Aamer Shaikh (Corpus Christi)</p>
+<p>&nbsp;</p>
+</div></body>
+<?php
+ 	include ("Includes/followsidebar.php");  
+   include ("Includes/footer.php");
+   ?>

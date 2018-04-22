@@ -1,0 +1,64 @@
+/* LINK TILE STYLING */
+.metroLink, .metroLinkBack {
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.metroLink span, .metroLinkBack span {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.metroLink:hover {
+    background-image: url("../Images/Common/RArrow_Hover.png");
+}
+
+.metroLinkBack:hover {
+    background-image: url("../Images/Common/LArrow_Hover.png");
+}
+
+/* GENERIC TILE LAYOUTS */
+.tile0, .tile1, .tile2, .tile3, .tile4 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+    min-height: 107px;
+}
+
+.endTile {
+    margin-right: 0 !important;
+}
+
+.tile0 {
+    width: 107px;
+}
+
+.tile1 {
+    width: 224px;
+}
+
+.tile2 {
+    width: 458px;
+}
+
+.tile3 {
+    width: 692px;
+}
+.tile3-5 {
+    width: 809px;
+}
+
+.tile4 {
+    width: 926px;
+    margin-right: 0;
+}

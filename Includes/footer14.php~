@@ -1,0 +1,10 @@
+    
+        </div>
+<!-- close Page-Content div -->
+<div id="footer">
+    <a href="mailto:sg651@cam.ac.uk">Contact Webmaster</a><br />
+    <span id="copyright">Copyright &copy; <?php echo date("Y"); ?> Cambridge University India Society</span>   
+</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+
+<?php
+    include("Includes/header.php");         
+?>
+ 
+<h3>Cambridge University India Society would like to say a huge 'Thank You' to all of our current sponsors:</h3>
+     <p align="center"><em>Please click on the sponsor for more information</em></p>
+       
+<blockquote>
+  <table summary="" align="center" >
+<tr><td>
+
+    <script type="text/javascript">
+	$(document).ready(function() {
+		$('a.gallery').fancybox({
+    'titlePosition' : 'over'
+    });
+		$(".fancybox").fancybox();
+	});
+   </script>
+  <blockquote>
+    <blockquote>
+		<p>
+		<p><a class="fancybox" href="/Images/Sponsors/asiana.png" title="<a href='http://www.asiana.tv/'>Visit the Asiana website</a>"><img src="/Images/Sponsors/asiana.png" alt="" align="middle" width=300 /></p> 
+		<p><a class="fancybox" href="/Images/Sponsors/eastend_mango.jpeg" title="<a href='http://eastendfoods.co.uk/'>Visit the East Ends website</a>"><img src="/Images/Sponsors/eastend_sponsor.jpg" alt="" align="middle" width=300 /></p> 
+      <p><a class="fancybox" href="/Images/Sponsors/Tubzee_full.jpg" title="<a href='http://tubzee.co.uk/'>Visit the Tubzee website</a>"><img src="/Images/Sponsors/Tubzee_Logo.jpg" alt="" align="middle" width=300 /></a></p>
+      <p><a class="fancybox" href="/Images/Sponsors/Bio Green_full.jpg" title="<a href='http://biogreendairy.com/'>Visit the Bio Green Dairy website</a>"><img src="/Images/Sponsors/Bio Green_copy.jpg" alt="" align="middle" width=300 /></a> </p> 
+      <p><a class="fancybox" href="/Images/Sponsors/Gold Star Wholesale Ltd.gif" title="<a href='http://	goldstar.uk.com/'>Visit the Gold Star Wholesale website</a>"><img src="/Images/Sponsors/Gold Star Wholesale Ltd.gif" alt="" align="middle" width=300 /></a> </p> 
+      <p><a class="fancybox" href="/Images/Sponsors/Rass Fine Foods Ltd Full.png" title="<a href='http://rassfinefoods.com/'>Visit the Rass Fine Foods website</a>"><img src="/Images/Sponsors/Rass Fine Foods Ltd.png" alt="" align="middle" width=300 /></a> </p> 
+      </p>
+      <br>
+</td></tr>
+</table>
+<p>If you are interested in sponsoring a future Cambridge University India Society event, please contact our Sponsorship Officer <a href="mailto:kjr47@cam.ac.uk">Krishna Ramesh</a>. </p>
+<p>Sponsorship Consultant - <span class="accent">Yaz Jung</span></p>
+    <br>
+    <?php
+    include ("Includes/footer.php");
+?>

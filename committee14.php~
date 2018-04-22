@@ -1,0 +1,164 @@
+<?php
+    include("Includes/header.php");         
+?>
+<h3>
+    The Cambridge University India Society Committee 2014/2015
+</h3>
+<p>
+    For information on past committees, please look at the <a href="/Archive.php#C2014">Archive</a> section.<br>
+    To contact a member, please click on their name. </p>
+<table width="834" border="0" align="center">
+  <tr align="center" valign="middle">
+    <td width="200"><a href="mailto:ss2174@cam.ac.uk"><img src="/Images/Committee-2014/Sonam.jpg" width="176" height="208" alt="Sonam"></a></td>
+    <td width="100">&nbsp;</td>
+    <td width="200"><a href="mailto:asp39@cam.ac.uk"><img src="/Images/Committee-2014/Arran.jpg" width="176" height="208" alt="Arran"></a></td>
+    <td width="100">&nbsp;</td>
+    <td width="200"><a href="mailto:an430@cam.ac.uk"><img src="/Images/Committee-2013/Ash.jpg" width="176" height="208" alt="Ash"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td class="accent"><a href="mailto:ss2174cam.ac.uk">Sonam Shah<br>
+      President<br>
+      Jesus</a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:asp39@cam.ac.uk">Arran Patel<br>
+      Vice President<br>
+      Fitzwilliam</a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:an430@cam.ac.uk">Ash Nandi<br>
+      Secretary and Publicity<br>
+      Sidney Sussex</a><br></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><br>
+      <br>
+      <br>
+<br>
+<a href="mailto:ak868@cam.ac.uk"><img src="/Images/Committee-2013/Ajay.jpg" width="176" height="208" alt="Ajay"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:kjr47@cam.ac.uk"><img src="/Images/Committee-2013/Krishna.jpg" width="176" height="208" alt="Krishna"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:ha344@cam.ac.uk"><img src="/Images/Committee-2013/Harini.jpg" width="176" height="208" alt="Harini"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:ak868@cam.ac.uk">Ajay Kotecha<br>
+      Treasurer<br>
+      Churchill</a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:kjr47@cam.ac.uk">Krishna Ramesh<br>
+      Sponsorship<br>
+      Downing</a><br></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:ha344@cam.ac.uk">Harini Annadanam<br>
+      Ents<br>
+      Sidney Sussex</a></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:ss2102@cam.ac.uk"><img src="/Images/Committee-2013/Poulomi.jpg" width="176" height="208" alt="Poulomi"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:ag741@cam.ac.uk"><img src="/Images/Committee-2013/Praveena.jpg" width="176" height="208" alt="Praveena"></a><br></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:tia21@cam.ac.uk"><img src="/Images/Committee-2013/Nikhil.jpg" width="176" height="208" alt="Nikhil"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:ps638@cam.ac.uk">Poulomi Solanki<br>
+      Culture and Education<br>
+      Newnham</a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:pa366@cam.ac.uk">Praveena Anilal<br>
+      Sports<br>
+      Gonville and Caius</a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:ndd26@cam.ac.uk">Nikhil Dhir<br>
+      General<br>
+      Queens'</a></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:dt360@cam.ac.uk"><img src="/Images/Committee-2013/Dipshika.jpg" width="176" height="208" alt="Dipshika"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:kdm25@cam.ac.uk"><img src="/Images/Committee-2013/Kush.jpg" width="176" height="208" alt="Kush"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:ag741@cam.ac.uk"><img src="/Images/Committee-2013/Akash.jpg" width="176" height="208" alt="Akash"></a></td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><a href="mailto:dt360@cam.ac.uk">Dipshika Thakur<br>
+      Khayaal Editor<br>
+      Peterhouse</a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:kdm25@cam.ac.uk">Kush Madlani<br>
+      Advisor<br>
+      Christ's</a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:ag741@cam.ac.uk">Akash Gandhi<br>
+      Advisor<br>
+      Queens'</a></td>
+  </tr>
+  <tr align="center" valign="middle">
+    <td><br>
+      <br>
+      <br>
+      <br>
+      </td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      <a href="mailto:mj433@cam.ac.uk"><img src="/Images/Committee-2013/Mehul.jpg" width="176" height="208" alt="Mehul"></a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      <br>
+      <br>
+      </td>
+  </tr>
+  <tr align="center" valign="middle" class="accent">
+    <td><br>
+      <br>
+      </a></td>
+    <td>&nbsp;</td>
+    <td><a href="mailto:mj433@cam.ac.uk">Mehul Jesani<br>
+      Webmaster<br>
+      Emmanuel</a></td>
+    <td>&nbsp;</td>
+    <td><br>
+      <br>
+      </a></td>
+  </tr>
+</table>
+<br>
+<p>&nbsp;</p>
+<?php
+    include ("Includes/footer.php");
+?>

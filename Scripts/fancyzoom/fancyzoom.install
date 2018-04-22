@@ -1,0 +1,51 @@
+<?php
+// $Id: fancyzoom.install,v 1.1.4.5 2009/11/21 21:20:58 slurslee Exp $
+/**
+ * @file
+ * When uninstalling remove settings from Drupal
+ */
+
+  function fancyzoom_install() {
+    drupal_set_message(t('FancyZoom has been successfully installed.'));
+  }
+
+  function fancyzoom_uninstall() {
+
+    if ($oldfile = variable_get('fancyzoom_settings_js', '0')) {
+      file_delete($oldfile);
+    }
+
+    variable_del('fancyzoom_version');
+    variable_del('fancyzoom_home');
+    variable_del('fancyzoom_includeCaption');
+    variable_del('fancyzoom_showClosebox');
+    variable_del('fancyzoom_zoomTime');
+    variable_del('fancyzoom_zoomSteps');
+    variable_del('fancyzoom_includeFade');
+    variable_del('fancyzoom_minBorder');
+    variable_del('fancyzoom_zoomImagesURI');
+    variable_del('fancyzoom_shadowColor');
+    variable_del('fancyzoom_shadowColor');
+    variable_del('fancyzoom_settings_js');
+    variable_del('fancyzoom_minimized');
+    variable_del('fancyzoom_scriptType');
+    drupal_set_message(t('FancyZoom settings discarded.'));
+  }
+
+  // Change minimized setting to script option setting
+  function fancyzoom_update_6000() {
+	if (!variable_get('fancyzoom_scriptType', 0)) {
+      if (variable_get('fancyzoom_minimized', 2) == 0) {
+        variable_set('fancyzoom_scriptType', 'jquery');
+      } else {
+        variable_set('fancyzoom_scriptType', 'jquery-min');
+      }
+    }
+    variable_del('fancyzoom_minimized');
+    return array();
+  }
+
+  function fancyzoom_update_6001() {
+    fancyzoom_cron();
+    return array();
+  }

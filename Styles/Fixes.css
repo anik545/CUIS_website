@@ -1,0 +1,4 @@
+/* Required for Chrome, bizare! Works fine in IE and FF w/o this fix... */
+#meetCommitteeTile .jcarousel-item {
+    width: 224px;
+}

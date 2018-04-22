@@ -1,0 +1,23 @@
+<?php
+    include("Includes/header.php");         
+?>
+<h3>&nbsp;</h3>
+<div style="text-align: center;">
+    <ul style="list-style: none;">
+        <li style="padding-bottom: 5px;"></li>
+        <li></li>
+    </ul>
+</div>
+
+  The Cambridge University India Society is dedicated in its aim to fundraise for charities. In fact, all our proceeds go to charity. This year, all our proceeds from our various events and fundraisers will go to:
+  <ul>
+    <li><a href="http://www.ssshss.org.in/">The Sri Sathya Sai School</a>    </li>
+    <span itemprop="description">  <br/><li><a href="http://www.lymphomas.org.uk/">The Lymphoma Association</a>    </li>
+  </ul>
+  <p>&nbsp;</p>
+<p>If you have any suggestions or would like to find out more information, please email our <a href="mailto:kdm25@cam.ac.uk">President</a>, who will be more than happy to answer any questions you may have. </p>
+<p><br/>
+</p>
+<?php
+    include ("Includes/footer.php");
+?>
