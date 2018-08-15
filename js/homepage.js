@@ -52,5 +52,7 @@ function onePageFixedNav() {
 jQuery(document).on('ready', function() {
 	(function ($) {
      onePageFixedNav();
+     $('.tp-leftarrow.tparrows.hermes').css("visibility","hidden");
+     $('.tp-rightarrow.tparrows.hermes').css("visibility","hidden")
   })(jQuery);
 });

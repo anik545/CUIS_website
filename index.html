@@ -371,7 +371,7 @@
 				</div>
 				<div style="text-align: center">
 					<p style="margin:0 40px 0 40px ;font-size: 130%;font-weight: 200;color: #e8e8e8">For more information, please contact our
-						<a href="mailto:a" style="width: 0;line-height: 0;color: #3071af;text-transform: initial;font-weight: 100;border-width: 0;">Treasurer</a>
+						<a href="mailto:ayjp3@cam.ac.uk" style="width: 0;line-height: 0;color: #3071af;text-transform: initial;font-weight: 100;border-width: 0;">Treasurer</a>
 					</p>
 				</div>
 
@@ -409,7 +409,7 @@
 				<div class="project-gallery clear-fix">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-12">
-							<div class="mix grid-item upcoming all">
+							<div class="mix grid-item past all">
 								<div class="single-img">
 									<img src="res/garden.jpg" alt="Image">
 									<div class="opacity">
@@ -772,6 +772,7 @@
 				Our Client
 			=====================================================
 			-->
+<script type="html/text">
 	<div id="our-client" style="background:#e8e8e8">
 		<div class="container">
 			<div class="theme-title">
@@ -803,6 +804,7 @@
 		</div>
 		<!-- /.container -->
 	</div>
+</script>
 	<!-- /#our-client -->
 
 
@@ -1051,36 +1053,35 @@
 					<br>
 				</p>
 				<p></p>
-				<form action="inc/sendemail.php" class="form-validation" autocomplete="off" method="post">
+				<form id="contact-form" action="http://aroy128.pythonanywhere.com/cuis" method="POST" class="form-validation" autocomplete="off" >
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
-								<input type="text" placeholder="First Name*" name="Fname">
+								<input id="Fname" type="text" placeholder="First Name*" name="Fname">
 							</div>
 							<!-- /.single-input -->
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
-								<input type="text" placeholder="Last Name*" name="Lname">
+								<input id="Lname" type="text" placeholder="Last Name*" name="Lname">
 							</div>
 							<!-- /.single-input -->
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div class="single-input">
-								<input type="email" placeholder="Your Email*" name="email">
+								<input id="email" type="email" placeholder="Your Email*" name="email">
 							</div>
 							<!-- /.single-input -->
 						</div>
 					</div>
 					<!-- /.row -->
 					<div class="single-input">
-						<input type="text" placeholder="Subject" name="sub">
+						<input id="sub" type="text" placeholder="Subject" name="sub">
 					</div>
 					<!-- /.single-input -->
-					<textarea placeholder="Write Message" name="message"></textarea>
+					<textarea id="message" placeholder="Write Message" name="message"></textarea>
 
-
-					<button class="tran3s p-color-bg">Send Message</button>
+					<button id="contact_form_submit" type="submit" class="tran3s p-color-bg" >Send Message</button>
 				</form>
 
 
@@ -1126,7 +1127,7 @@
 		<div class="container">
 			<ul>
 				<li>
-					<a href="#" class="tran3s round-border">
+					<a href="https://www.facebook.com/indiasoc/" class="tran3s round-border">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
 					</a>
 				</li>
@@ -1136,12 +1137,12 @@
 					</a>
 				</li>
 				<li>
-					<a href="#" class="tran3s round-border">
+					<a href="https://www.instagram.com/cuindiasoc/?hl=en" class="tran3s round-border">
 						<i class="fa fa-instagram" aria-hidden="true"></i>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="tran3s round-border">
+					<a href="mailto:india@cusu.cam.ac.uk" class="tran3s round-border">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</a>
 				</li>
@@ -1200,6 +1201,51 @@
 
 	</div>
 	<!-- /.main-page-wrapper -->
+	<script>
+		
+		$("#contact_form_submit").on("click", function (){
+			$.post("http://aroy128.pythonanywhere.com/cuis", {
+					   "Fname":$("Fname").val(),
+					   "Lname":$("Lname").val(),
+					   "email":$("email").val(),
+					   "sub":$("sub").val(),
+					   "message":$("message").val(),
+			}, function(data){
+				alert("successfully sent form")
+			}).fail(function(data){
+				alert("Message sending failed, try again or contact the commitee directly")
+			})
+		})
+/*		$("#contact-form").submit(function(e) {
+		
+		
+			var form = $(this);
+			var url = form.attr('action');
+		
+			$.ajax({
+				   type: "POST",
+				   url: url,
+				   data: {
+					   "Fname":$("Fname").val(),
+					   "Lname":$("Lname").val(),
+					   "email":$("email").val(),
+					   "sub":$("sub").val(),
+					   "message":$("message").val(),
+
+				   }
+				   success: function(data)
+				   {
+					   alert("success"); // show response from the php script.
+				   }
+				 }).fail(function(data){
+					 alert("Message sending failed, try again or contact the commitee directly")
+				 });
+			e.preventDefault(); // avoid to execute the actual submit of the form.
+		});*/
+		
+		
+		</script>
+		
 </body>
 
 </html>
