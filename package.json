@@ -12,7 +12,8 @@
     "gulp-size": "^3.0.0",
     "gulp-imagemin": "^4.1.0",
     "run-sequence": "^1.2.2",
-    "gulp-newer": "^1.4.0"
+    "gulp-newer": "^1.4.0",
+    "gulp-rsync": "^0.0.8"
   },
   "engines": {
     "node": ">=0.12.0"

@@ -9,6 +9,7 @@ const runSequence = require('run-sequence');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
+const rsync = require('gulp-rsync');
 
 
 const distRoot = 'dist';
@@ -88,33 +89,28 @@ gulp.task('default', ['clean'], () => {
     );
 });
 
-// gulp.task('deploy', function () {
-//
-//     // Dirs and Files to sync
-//     const rsyncPaths = ['dist'];
-//
-//     // Default options for rsync
-//     const rsyncConf = {
-//         progress: true,
-//         incremental: true,
-//         relative: true,
-//         emptyDirectories: true,
-//         recursive: true,
-//         clean: true,
-//         exclude: [],
-//     };
-//
-//     rsyncConf.hostname = 'shell.srcf.net'; // hostname
-//     rsyncConf.username = 'ar899'; // ssh username
-//     rsyncConf.destination = 'indiasoc/out'; // path where uploaded files go
-//
-//     // Use gulp-rsync to sync the files
-//     return gulp.src(rsyncPaths)
-//         .pipe(gulpif(
-//             prompt.confirm({
-//                 message: 'Heads Up! Are you SURE you want to push to PRODUCTION?',
-//                 default: false
-//             })
-//         ))
-//         .pipe(rsync(rsyncConf));
-// });
+gulp.task('deploy', () => {
+
+    // Dirs and Files to sync
+    const rsyncPaths = ['dist'];
+
+    // Default options for rsync
+    const rsyncConf = {
+        progress: true,
+        incremental: true,
+        relative: true,
+        emptyDirectories: true,
+        recursive: true,
+        clean: true,
+        chmod: 'ugo=rwX',
+        exclude: [],
+    };
+
+    rsyncConf.hostname = 'shell.srcf.net'; // hostname
+    rsyncConf.username = 'ar899'; // ssh username
+    rsyncConf.destination = 'indiasoc/out'; // path where uploaded files go
+
+    // Use gulp-rsync to sync the files
+    return gulp.src(rsyncPaths)
+        .pipe(rsync(rsyncConf));
+});
