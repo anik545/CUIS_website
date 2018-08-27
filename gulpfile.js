@@ -8,7 +8,9 @@ const htmlmin = require('gulp-htmlmin');
 const runSequence = require('run-sequence');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const newer = require('gulp-newer');
 
+const distRoot = 'dist';
 // Set the browser that you want to support
 const AUTOPREFIXER_BROWSERS = [
     'ie >= 10',
@@ -26,6 +28,7 @@ const AUTOPREFIXER_BROWSERS = [
 gulp.task('styles', () => {
     return gulp.src('./src/css/**/*.css')
     // Auto-prefix css styles for cross browser compatibility
+        .pipe(newer('./dist/css'))
         .pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
         // Minify the file
         .pipe(csso())
@@ -54,6 +57,7 @@ gulp.task('pages', () => {
 
 gulp.task('images', () => {
     return gulp.src(['./src/img/**/*'])
+        .pipe(newer('./dist/img'))
         .pipe(imagemin({
             progressive: true,
             interlaced: true
@@ -82,3 +86,34 @@ gulp.task('default', ['clean'], () => {
         'pages'
     );
 });
+
+// gulp.task('deploy', function () {
+//
+//     // Dirs and Files to sync
+//     const rsyncPaths = ['dist'];
+//
+//     // Default options for rsync
+//     const rsyncConf = {
+//         progress: true,
+//         incremental: true,
+//         relative: true,
+//         emptyDirectories: true,
+//         recursive: true,
+//         clean: true,
+//         exclude: [],
+//     };
+//
+//     rsyncConf.hostname = 'shell.srcf.net'; // hostname
+//     rsyncConf.username = 'ar899'; // ssh username
+//     rsyncConf.destination = 'indiasoc/out'; // path where uploaded files go
+//
+//     // Use gulp-rsync to sync the files
+//     return gulp.src(rsyncPaths)
+//         .pipe(gulpif(
+//             prompt.confirm({
+//                 message: 'Heads Up! Are you SURE you want to push to PRODUCTION?',
+//                 default: false
+//             })
+//         ))
+//         .pipe(rsync(rsyncConf));
+// });
