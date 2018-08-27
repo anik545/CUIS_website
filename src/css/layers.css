@@ -4232,11 +4232,12 @@ tp-caption.Team-Thumb,
 }
 .tp-caption.VideoControls-Pause:hover,
 .VideoControls-Pause:hover {
-    color: rgba(0, 0, 0, 1.00);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 1.00);
-    border-color: rgba(0, 0, 0, 1.00);
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 100px 100px 100px 100px;
-    cursor: pointer
+	color: rgba(0, 0, 0, 1.00);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 1.00);
+	border-color: rgba(0, 0, 0, 1.00);
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 100px 100px 100px 100px;
+	cursor: pointer
+}
