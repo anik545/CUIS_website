@@ -19,6 +19,6 @@
     "node": ">=0.12.0"
   },
   "scripts": {
-    "gulp": "gulp"
+    "deploy": "gulp default && rsync -av dist/ ar899@shell.srcf.net:indiasoc/public_html/"
   }
 }
