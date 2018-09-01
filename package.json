@@ -12,13 +12,13 @@
     "gulp-size": "^3.0.0",
     "gulp-imagemin": "^4.1.0",
     "run-sequence": "^1.2.2",
-    "gulp-newer": "^1.4.0",
-    "gulp-rsync": "^0.0.8"
+    "gulp-newer": "^1.4.0"
   },
   "engines": {
     "node": ">=0.12.0"
   },
   "scripts": {
-    "deploy": "gulp default && rsync -av dist/ ar899@shell.srcf.net:indiasoc/public_html/"
+    "deploy_prod": "gulp default && rsync -av dist/ ar899@shell.srcf.net:indiasoc/public_html/",
+    "deploy_staging": "gulp default && rsync -av dist/ ar899@shell.srcf.net:public_html/"
   }
 }
