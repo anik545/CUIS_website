@@ -107,6 +107,7 @@ gulp.task('clean', () => del(['dist']));
 gulp.task('default', () => {
     runSequence(
         'copy',
+        'crop-committee',
         'images',
         'styles',
         'scripts',
