@@ -85,6 +85,11 @@ gulp.task('crop-committee',  function() {
         .pipe(gulp.dest('./src/img/committee'));
 })
 
+gulp.task('restore-committee', () => {
+    gulp.src(['./src/img/committee/orig/*'])
+    .pipe(gulp.dest('./src/img/committee'))
+})
+
 // copy all the other files, e.g. .htaccess, cgi, etc.
 gulp.task('copy', () => {
     gulp.src(['./src/**/*',
