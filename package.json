@@ -19,7 +19,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "deploy_prod": "gulp default && rsync -av dist/ ar899@shell.srcf.net:indiasoc/public_html/",
-    "deploy_staging": "gulp default && rsync -av dist/ ar899@shell.srcf.net:public_html/"
+    "deploy_prod": "gulp default && rsync -rvgo --chmod=u+rwx,g+rwx,o+rx,o-w dist/ ar899@shell.srcf.net:indiasoc/public_html/",
+    "deploy_staging": "gulp default && rsync -rvgo --chmod=u+rwx,g+rwx,o+rx,o-w dist/ ar899@shell.srcf.net:public_html/"
   }
 }
