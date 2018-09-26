@@ -3,3 +3,7 @@
 node_modules/
 *.iml
 dist/
+*.pyc
+__pycache__/
+_misc/
+*lock.json

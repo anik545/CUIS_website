@@ -9,10 +9,9 @@ const runSequence = require('run-sequence');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
-const rsync = require('gulp-rsync');
+const imageResize = require('gulp-image-resize');
 
 
-const distRoot = 'dist';
 // Set the browser that you want to support
 const AUTOPREFIXER_BROWSERS = [
     'ie >= 10',
@@ -29,9 +28,11 @@ const AUTOPREFIXER_BROWSERS = [
 // Gulp task to minify CSS files
 gulp.task('styles', () => {
     return gulp.src('./src/css/**/*.css')
-    // Auto-prefix css styles for cross browser compatibility
+        // Auto-prefix css styles for cross browser compatibility
         .pipe(newer('./dist/css'))
-        .pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
+        .pipe(autoprefixer({
+            browsers: AUTOPREFIXER_BROWSERS
+        }))
         // Minify the file
         .pipe(csso())
         // Output
@@ -41,7 +42,8 @@ gulp.task('styles', () => {
 // Gulp task to minify JavaScript files
 gulp.task('scripts', () => {
     return gulp.src('./src/js/**/*.js')
-    // Minify the file
+        // Minify the file
+        .pipe(newer('./dist/js'))
         .pipe(uglify())
         // Output
         .pipe(gulp.dest('./dist/js'))
@@ -50,6 +52,7 @@ gulp.task('scripts', () => {
 // Gulp task to minify HTML files
 gulp.task('pages', () => {
     return gulp.src(['./src/**/*.html'])
+        .pipe(newer('./dist/'))
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -67,26 +70,49 @@ gulp.task('images', () => {
         .pipe(gulp.dest('./dist/img'));
 });
 
-// Clean output directory
+gulp.task('crop-committee',  function() {
 
+    return gulp.src(['./src/img/committee/orig/*'])
+        .pipe(newer('./src/img/committee'))
+        .pipe(imageResize({
+            width: "720",
+            height: "720",
+            gravity: "North",
+            upscale: true,
+            crop: true,
+            cover: true
+        }))
+        .pipe(gulp.dest('./src/img/committee'));
+})
+
+gulp.task('restore-committee', () => {
+    gulp.src(['./src/img/committee/orig/*'])
+    .pipe(gulp.dest('./src/img/committee'))
+})
+
+// copy all the other files, e.g. .htaccess, cgi, etc.
 gulp.task('copy', () => {
-    gulp.src(['./src/**/*', 
+    gulp.src(['./src/**/*',
             '!./src/*.html',
-            './src/*', '!./',
+            './src/*',
+            './src/.*',
+            '!./',
             '!./src/css/**/*',
-            '!./src/js/**/*', 
-            '!./src/img/**/*'])
+            '!./src/js/**/*',
+            '!./src/img/**/*'
+        ])
         .pipe(gulp.dest('./dist'));
-
 });
 
+// Clean output directory
 gulp.task('clean', () => del(['dist']));
 
 
 // Gulp task to minify all files
-gulp.task('default', ['clean'], () => {
+gulp.task('default', () => {
     runSequence(
         'copy',
+        'crop-committee',
         'images',
         'styles',
         'scripts',
@@ -94,54 +120,4 @@ gulp.task('default', ['clean'], () => {
     );
 });
 
-gulp.task('deploy_prod', () => {
-
-    // Dirs and Files to sync
-    const rsyncPaths = ['dist/'];
-
-    // Default options for rsync
-    const rsyncConf = {
-        progress: true,
-        incremental: true,
-        relative: true,
-        emptyDirectories: true,
-        recursive: true,
-        clean: true,
-        chmod: 'ugo=rwX',
-        exclude: [],
-    };
-
-    rsyncConf.hostname = 'shell.srcf.net'; // hostname
-    rsyncConf.username = 'ar899'; // ssh username
-    rsyncConf.destination = 'indiasoc/public_html/'; // path where uploaded files go
-    //TODO: add staging/production options
-    // Use gulp-rsync to sync the files
-    return gulp.src(rsyncPaths)
-        .pipe(rsync(rsyncConf));
-});
-
-gulp.task('deploy_staging', () => {
-
-    // Dirs and Files to sync
-    const rsyncPaths = ['dist/'];
-
-    // Default options for rsync
-    const rsyncConf = {
-        progress: true,
-        incremental: true,
-        relative: true,
-        emptyDirectories: true,
-        recursive: true,
-        clean: true,
-        chmod: 'ugo=rwX',
-        exclude: [],
-    };
-
-    rsyncConf.hostname = 'shell.srcf.net'; // hostname
-    rsyncConf.username = 'ar899'; // ssh username
-    rsyncConf.destination = 'public_html/'; // path where uploaded files go
-    //TODO: add staging/production options
-    // Use gulp-rsync to sync the files
-    return gulp.src(rsyncPaths)
-        .pipe(rsync(rsyncConf));
-});
+//Use npm run (deploy_prod | deploy_staging) to deploy
