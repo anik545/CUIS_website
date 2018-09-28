@@ -412,7 +412,7 @@
 					<br>
 				</p>
 				<p></p>
-				<form id="contact-form" action="http://aroy128.pythonanywhere.com/cuis" method="POST" class="form-validation" autocomplete="off" >
+				<form id="contact-form" method="POST" class="form-validation" autocomplete="off" >
 					<div class="row">
 						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 							<div class="single-input">
@@ -440,7 +440,7 @@
 					<!-- /.single-input -->
 					<textarea id="message" placeholder="Write Message" name="message"></textarea>
 
-					<button id="contact_form_submit" type="submit" class="tran3s p-color-bg" >Send Message</button>
+					<button id="contact_form_submit"  class="tran3s p-color-bg" >Send Message</button>
 				</form>
 
 
@@ -452,7 +452,7 @@
 							<i class="fa fa-times" aria-hidden="true"></i>
 						</button>
 						<div class="wrapper">
-							<p>Your message was sent successfully.</p>
+							<p id="success-message">Your message was sent successfully, we'll get back to you soon.</p>
 						</div>
 					</div>
 				</div>
@@ -463,7 +463,7 @@
 							<i class="fa fa-times" aria-hidden="true"></i>
 						</button>
 						<div class="wrapper">
-							<p>Sorry!Something Went Wrong.</p>
+							<p id="failure-message">Sorry! Something went wrong sending the message, please try again or contact the committee directly.</p>
 						</div>
 					</div>
 				</div>
@@ -474,8 +474,6 @@
 		<!-- /.container -->
 	</div>
 	<!-- /#contact-section -->
-
-
 
 	<!--
 			=====================================================
@@ -510,7 +508,7 @@
 			<p>
 				<script>
 					document.write(Date().split ` ` [3])
-				</script> Cambridge University India Society</p>
+				</script>&nbsp;Cambridge University India Society</p>
 		</div>
 	</footer>
 
@@ -558,54 +556,8 @@
 	<script type="text/javascript" src="js/theme.js"></script>
 	<script type="text/javascript" src="js/homepage.js"></script>
 
-
 	</div>
-	<!-- /.main-page-wrapper -->
-	<script>
-		
-		$("#contact_form_submit").on("click", function (){
-			$.post("http://aroy128.pythonanywhere.com/cuis", {
-					   "Fname":$("Fname").val(),
-					   "Lname":$("Lname").val(),
-					   "email":$("email").val(),
-					   "sub":$("sub").val(),
-					   "message":$("message").val(),
-			}, function(data){
-				alert("successfully sent form")
-			}).fail(function(data){
-				alert("Message sending failed, try again or contact the commitee directly")
-			})
-		})
-/*		$("#contact-form").submit(function(e) {
-		
-		
-			var form = $(this);
-			var url = form.attr('action');
-		
-			$.ajax({
-				   type: "POST",
-				   url: url,
-				   data: {
-					   "Fname":$("Fname").val(),
-					   "Lname":$("Lname").val(),
-					   "email":$("email").val(),
-					   "sub":$("sub").val(),
-					   "message":$("message").val(),
-
-				   }
-				   success: function(data)
-				   {
-					   alert("success"); // show response from the php script.
-				   }
-				 }).fail(function(data){
-					 alert("Message sending failed, try again or contact the commitee directly")
-				 });
-			e.preventDefault(); // avoid to execute the actual submit of the form.
-		});*/
-		
-		
-		</script>
-		
+	<!-- /.main-page-wrapper -->		
 </body>
 
 </html>
