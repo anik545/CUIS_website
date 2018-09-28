@@ -3,5 +3,8 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://indiasoc.soc.srcf.net/$1 [R,L]
+RewriteCond %{HTTP_HOST} ^(www\.)?indiasoc\.soc\.srcf\.net
+RewriteRule ^(.*)$ https://indiasoc.co.uk/$1 [R,L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://indiasoc.co.uk/$1 [R,L]
