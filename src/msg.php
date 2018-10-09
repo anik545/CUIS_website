@@ -8,13 +8,14 @@ $msg = $_POST["message"];
 
 $body = "New message from $fname $lname ($email):\n\n$msg\n";
 
-$from = 'ar899@cam.ac.uk';
+$from = 'indiasoc@srcf.net';
 
-$to = 'ar899@cam.ac.uk';
+$to = 'sa868@cam.ac.uk';
 
-$headers = "From: $email_from \r\n";
+$headers = "From: $from \r\n";
 $headers .= "Reply-To: $email \r\n";
+$headers .= "Bcc: ar899@cam.ac.uk\r\n";
 
-mail($from, $sub, $body, $headers)
+mail($to, $sub, $body, $headers);
 
 ?>
