@@ -73,7 +73,7 @@ gulp.task('images', () => {
 gulp.task('crop-committee',  function() {
 
     return gulp.src(['./src/img/committee/orig/*'])
-        .pipe(newer('./src/img/committee'))
+//        .pipe(newer('./src/img/committee'))
         .pipe(imageResize({
             width: "720",
             height: "720",
