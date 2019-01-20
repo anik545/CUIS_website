@@ -10,3 +10,7 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://indiasoc.co.uk/$1 [R,L]
 
 Redirect /join https://collecte.io/cuis-membership-88681
+
+Redirect /join.html https://lists.cam.ac.uk/mailman/listinfo/soc-indiasoc
+
+Redirect /events /#events
