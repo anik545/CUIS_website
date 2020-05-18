@@ -2,24 +2,33 @@
   "name": "indiasoc",
   "version": "1.0.0",
   "author": "Anik Roy",
+  "scripts": {
+    "build": "gulp default",
+    "clean": "gulp clean"
+  },
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^4.0.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-size": "^3.0.0",
-    "gulp-uglify": "^3.0.1",
-    "run-sequence": "^2.2.1"
+    "gulp-uglify": "^3.0.1"
   },
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "scripts": {
-    "deploy_prod": "gulp default && rsync -rvgo --chmod=u+rwx,g+rwx,o+rx,o-w dist/ ar899@shell.srcf.net:indiasoc/public_html/",
-    "deploy_staging": "gulp default && rsync -rvgo --chmod=u+rwx,g+rwx,o+rx,o-w dist/ ar899@shell.srcf.net:public_html/"
-  }
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ]
 }

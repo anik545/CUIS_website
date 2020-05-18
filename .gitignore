@@ -7,3 +7,4 @@ dist/
 __pycache__/
 _misc/
 *lock.json
+yarn-error.log
