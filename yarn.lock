@@ -949,9 +949,9 @@ decamelize@^1.1.1, decamelize@^1.1.2:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 decompress-response@^3.2.0, decompress-response@^3.3.0:
   version "3.3.0"
@@ -1970,11 +1970,6 @@ gulp-uglify@^3.0.1:
     through2 "^2.0.0"
     uglify-js "^3.0.5"
     vinyl-sourcemaps-apply "^0.2.0"
-
-gulp4-run-sequence@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gulp4-run-sequence/-/gulp4-run-sequence-1.0.1.tgz#aa958d99b96c832c61c1f924661e426b08c27556"
-  integrity sha512-6w845e/gi5TOc9OHmHtpEfumIiwKg7dj9vvapOeN9bzN4jPpSYlHNQ3TZzT9jyeafHVM4ALHFizSxQyRiZDIjw==
 
 gulp@^4.0.2:
   version "4.0.2"
